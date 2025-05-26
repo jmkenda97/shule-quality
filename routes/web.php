@@ -78,7 +78,7 @@ Route::group(['middleware'=>'admin'],function(){
  Route::get('admin/assign_subject/delete/{id}',[ClassSubjectController::class,'delete']);
  //edit_single urls
  Route::get('admin/assign_subject/edit_single/{id}',[ClassSubjectController::class,'edit_single']);
- Route::post('admin/assign_subject/edit_single/{id}', [ClassSubjectController::class,'edit_single']);
+ Route::post('admin/assign_subject/edit_single/{id}', [ClassSubjectController::class,'update_single']);
 
 
  //change_password controller urls
